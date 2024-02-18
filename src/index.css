@@ -1,0 +1,35 @@
+iframe {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+#moveThing {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 30vw;
+    height: 30px;
+    -webkit-app-region: drag;
+    cursor: move;
+}
+
+#moveThing img {
+    transform: translate(2px, -3px);
+    width: 10px;
+    filter: invert(60%);
+    cursor: move;
+    height: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(40,40,40);
+        color: #ffffff;
+    }
+}
