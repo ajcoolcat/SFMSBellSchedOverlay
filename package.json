@@ -1,8 +1,8 @@
 {
-  "name": "bellschedoverlay",
-  "productName": "Crooms Bell Schedule",
-  "version": "1.6.3",
-  "description": "The Crooms Bell Schedule App.",
+  "name": "sfmsbellsched",
+  "productName": "SFMS Bell Schedule",
+  "version": "1.0.0",
+  "description": "The Sanford Middle School Bell Schedule App.",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": {
-    "name": "Crooms Bell Schedule",
+    "name": "SFMS Bell Schedule",
     "email": "support@croomssched.tech"
   },
   "license": "MIT",
