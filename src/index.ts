@@ -173,11 +173,16 @@ const createWindow = (): void => {
     { label: 'Check for Updates', type: 'normal', click: () => {manualUpdate();}, id: "checkForUpdatesButton", icon: updateIcon },
     { label: 'Reopen Window', type: 'normal', click: () => {mainWindow.close(); tray.destroy(); createWindow();}, id: "reopenWindowButton", icon: reopenIcon },
     { label: 'Open Sanford Bell Schedule Website', type: 'normal', click: () => {siteOpen();}, id: 'siteButton' , icon: openInBrowserIcon},
+    { label: 'Derpy Bird', type: 'normal', click: () => {derpyBird()}, id: "derpyBirdButton", icon: bugReportIcon },
     { label: 'Quit', type: 'normal', click: () => {app.quit()}, id: "quitButton", icon: closeIcon }
   ]);
-  tray.setToolTip('Crooms Bell Schedule');
+  tray.setToolTip('SFMS Bell Schedule');
   tray.setContextMenu(contextMenu);
 };
+
+const derpyBird = () => {
+  shell.openPath("https://croomssched.tech/derpybird").then();
+}
 
 /*const aboutWindow = () => {
   const aboutWin = new BrowserWindow({
