@@ -1,7 +1,7 @@
 {
   "name": "sfmsbellsched",
   "productName": "SFMS Bell Schedule",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Sanford Middle School Bell Schedule App.",
   "main": ".webpack/main",
   "scripts": {
